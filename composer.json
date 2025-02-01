@@ -42,7 +42,7 @@
             "phpstan analyse --memory-limit=2G --ansi"
         ],
         "test:unit": [
-            "pest --coverage"
+            "pest --coverage --ci"
         ],
         "test": [
             "@test:lint",
