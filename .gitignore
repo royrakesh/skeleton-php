@@ -1,0 +1,47 @@
+# PHP specific
+/vendor/
+/composer.lock
+/composer.phar
+
+# IDE specific
+/.idea/
+/.vscode/
+/*.swp
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.sql
+
+# Cache files
+/cache/
+/tmp/
+
+# Build directories
+/build/
+/dist/
+/node_modules/
+
+# PHPUnit
+phpunit.xml
+phpunit.xml.dist
+
+# Coverage reports
+/coverage/
+/*.cov
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Custom logs or temp files
+*.log
+*.sql
+
+# Composer vendor
+/vendor/*
+!/vendor/bin
+!/vendor/autoload.php

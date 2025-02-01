@@ -1,0 +1,53 @@
+{
+    "name": "royrakesh/skeleton-php",
+    "description": "A skeleton for modern php development",
+    "keywords": ["generator", "php", "skeleton"],
+    "version": "1.0.0",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "RoyRakesh\\SkeletonPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakesh Roy",
+            "role": "Developer",
+            "email": "royrakesh.cob@gmail.com",
+            "homepage": "https://royrakesh.dev"
+        }
+    ],
+   "require-dev": {
+        "laravel/pint": "^1.20",
+        "pestphp/pest": "^3.7",
+        "phpstan/phpstan": "^2.1",
+        "rector/rector": "^2.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": [
+            "pint"
+        ],
+        "test:lint": [
+            "pint --test"
+        ],
+        "test:types": [
+            "phpstan analyse --memory-limit=2G --ansi"
+        ],
+        "test:unit": [
+            "pest --coverage"
+        ],
+        "test": [
+            "@test:lint",
+            "@test:types",
+            "@test:unit"
+        ]
+    }
+}
