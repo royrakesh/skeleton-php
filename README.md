@@ -18,7 +18,8 @@ A skeleton for modern PHP development, providing a clean structure and essential
 - Pest for testing
 - Laravel Pint for code formatting
 - PHPStan for static analysis
-- Rector for code refactoring
+- Rector for code refactorin
+- Compatible with php 8.2 , 8.3 and 8.4
 
 ## 🛠 Usage
 
