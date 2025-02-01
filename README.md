@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" src="skeleton-php.png">
+  <img width="250" src="skeleton-php.png">
 </p>
 
 
