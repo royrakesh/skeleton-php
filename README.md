@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="460" src="skeleton-php.png">
+</p>
+
+
 # Skeleton PHP
 
 ![PHP Skeleton](https://img.shields.io/badge/PHP-Skeleton-blue.svg)
