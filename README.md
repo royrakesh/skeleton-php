@@ -1,6 +1,8 @@
 # Skeleton PHP
 
 ![PHP Skeleton](https://img.shields.io/badge/PHP-Skeleton-blue.svg)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/royrakesh/skeleton-php/php.yml?branch=main)
+
 
 A skeleton for modern PHP development, providing a clean structure and essential tooling.
 
