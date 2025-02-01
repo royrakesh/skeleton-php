@@ -22,14 +22,15 @@ A skeleton for modern PHP development, providing a clean structure and essential
 
 ## 🛠 Usage
 
-### Run Tests
-```sh
-composer test
-```
 
 ### Lint Code
 ```sh
 composer lint
+```
+
+### Run Unit Test
+```sh
+composer test:unit
 ```
 
 ### Static Analysis
@@ -37,9 +38,14 @@ composer lint
 composer test:types
 ```
 
-### Format Code
+### Test Code Format
 ```sh
 composer test:lint
+```
+
+### Run Everything
+```sh
+composer test
 ```
 
 ## 🏗 Folder Structure
