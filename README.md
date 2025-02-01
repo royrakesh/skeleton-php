@@ -47,6 +47,7 @@ tests/              # Unit and feature tests
 
 ### Greeting Contract
 ```php
+<?php
 declare(strict_types=1);
 
 namespace RoyRakesh\SkeletonPhp\Contracts;
@@ -59,6 +60,8 @@ interface GreetingContract
 
 ### Greeting Service
 ```php
+
+<?php
 declare(strict_types=1);
 
 namespace RoyRakesh\SkeletonPhp\Services;
@@ -70,6 +73,32 @@ class GreetingService implements GreetingContract
     public function greet(string $name): string
     {
         return "Hello, $name!";
+    }
+}
+```
+
+### Greeting Class
+```php
+
+<?php
+declare(strict_types=1);
+
+namespace RoyRakesh\SkeletonPhp;
+
+use RoyRakesh\SkeletonPhp\Services\GreetingService;
+
+final class Greeting
+{
+    private GreetingService $greetingService;
+
+    public function __construct()
+    {
+        $this->greetingService = new GreetingService();
+    }
+
+    public function greet(string $name): string
+    {
+        return $this->greetingService->greet($name);
     }
 }
 ```
@@ -86,6 +115,31 @@ it('returns a greeting message', function () {
     $service = new GreetingService();
 
     expect($service->greet('Rakesh'))->toBe('Hello, Rakesh!');
+});
+```
+
+### Pest Test for Greeting
+```php
+<?php
+
+declare(strict_types=1);
+
+use RoyRakesh\SkeletonPhp\Greeting;
+
+it('greets a user with a name', function () {
+    $greeting = new Greeting();
+
+    $result = $greeting->greet('Rakesh');
+
+    expect($result)->toBe('Hello, Rakesh!');
+});
+
+it('greets a user with an empty name', function () {
+    $greeting = new Greeting();
+
+    $result = $greeting->greet('');
+
+    expect($result)->toBe('Hello, !'); 
 });
 ```
 
