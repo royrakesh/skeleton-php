@@ -161,6 +161,7 @@ This package utilizes the following open-source tools:
 - [Laravel Pint](https://github.com/laravel/pint) - An opinionated PHP code formatter.
 - [PHPStan](https://phpstan.org/) - Static analysis tool for PHP.
 - [Rector](https://github.com/rectorphp/rector) - Automated code refactoring tool.
+- [@nunomaduro](https://github.com/nunomaduro) - Thanks for insping me to create opensource php projects. 
 
 ## 📝 License
 This project is licensed under the MIT License.
